@@ -16,5 +16,7 @@ namespace Courses.GraphQL.Data.Models
         public int Review { get; set; }
         public DateTime DateAdded { get; set; }
         public DateTime DateUpdated { get; set; }
+
+        public List<Review> Reviews { get; set; }
     }
 }

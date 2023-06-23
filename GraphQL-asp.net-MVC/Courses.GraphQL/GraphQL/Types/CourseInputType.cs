@@ -14,7 +14,7 @@ namespace Courses.GraphQL.GraphQL.Types
 
             Field<StringGraphType>("Description");
             Field<StringGraphType>("Name");
-            Field<IntGraphType>("Review");
+            Field<ListGraphType<ReviewType>>("Reviews");
             Field<DateTimeGraphType>("DateAdded");
             Field<DateTimeGraphType>("DateUpdated");
         }
